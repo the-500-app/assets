@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The 500 — Brand Assets Preview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Optional: use your own favicon once Pages is live -->
+  <link rel="icon" href="brand/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="brand/favicon/apple-touch-icon.png">
+  <style>
+    :root{
+      --bg: #ffffff;
+      --fg: #0b0c0c;
+      --muted:#6b7280;
+      --card:#f6f7f8;
+      --border:#e5e7eb;
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      color:var(--fg); background:var(--bg);
+      padding:24px;
+    }
+    h1{font-size:28px; margin:0 0 8px}
+    h2{font-size:18px; margin:24px 0 8px}
+    p{margin:0 0 12px; color:var(--muted)}
+    .wrap{max-width:1100px; margin:0 auto}
+    .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; align-items:center}
+    .card{
+      border:1px solid var(--border); border-radius:var(--radius); padding:16px; background:#fff;
+    }
+    .dark-preview{
+      background:#111; border-radius:var(--radius); padding:16px; display:flex; align-items:center; gap:16px;
+    }
+    .dark-preview img{background:transparent}
+    .row{display:flex; align-items:center; gap:16px}
+    .thumb{height:64px}
+    code, .code{
+      background:var(--card); border:1px solid var(--border); border-radius:10px; padding:10px 12px;
+      font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size:13px; display:block; overflow:auto;
+    }
+    .k{color:#111}
+    label{display:block; font-weight:600; margin:12px 0 6px}
+    input{
+      width:100%; padding:10px 12px; border:1px solid var(--border); border-radius:10px; font-size:14px;
+    }
+    .form-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:12px}
+    .btn{
+      appearance:none; border:1px solid var(--border); background:#fff; padding:10px 14px; border-radius:10px; cursor:pointer;
+      font-weight:600;
+    }
+    .btn:active{transform:translateY(1px)}
+    .muted{color:var(--muted)}
+    .watermark{opacity:.05; font-weight:800; font-size:64px}
+    .footer{margin-top:28px; font-size:13px; color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>The 500 — Brand Assets</h1>
+    <p>Local previews (from this repo) + generated jsDelivr CDN links for your app builder.</p>
+
+    <!-- Local previews (these use files from your repo so they work on GitHub Pages) -->
+    <h2>Logo previews</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="row">
+          <img class="thumb" src="brand/brandmark.svg" alt="Logo (light)">
+          <div>
+            <strong>Logo (light)</strong>
+            <div class="muted">brand/brandmark.svg</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="dark-preview">
+          <img class="thumb" src="brand/brandmark-inverse.svg" alt="Logo (dark)">
+          <div style="color:#fff">
+            <strong>Logo (dark)</strong>
+            <div class="muted" style="color:#c9c9c9">brand/brandmark-inverse.svg</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <img class="thumb" src="brand/favicon/favicon.svg" alt="Favicon SVG">
+          <div>
+            <strong>Favicon SVG</strong>
+            <div class="muted">brand/favicon/favicon.svg</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>App / PWA icons</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="row">
+          <img style="height:96px" src="brand/app-icon-1024.png" alt="App icon 1024">
+          <div>
+            <strong>App icon</strong>
+            <div class="muted">brand/app-icon-1024.png</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row">
+          <img style="height:96px" src="brand/maskable-icon-1024.png" alt="Maskable icon 1024">
+          <div>
+            <strong>Maskable icon</strong>
+            <div class="muted">brand/maskable-icon-1024.png</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row">
+          <img class="thumb" src="brand/favicon/apple-touch-icon.png" alt="Apple touch icon">
+          <div>
+            <strong>Apple touch icon</strong>
+            <div class="muted">brand/favicon/apple-touch-icon.png</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jsDelivr generator -->
+    <h2>jsDelivr CDN links</h2>
+    <p class="muted">Edit the values and click “Copy all” to paste into your builder prompt. Version should match your GitHub tag (e.g. <code>v1.0.0</code>).</p>
+
+    <div class="form-grid">
+      <div>
+        <label for="user">GitHub user/org</label>
+        <input id="user" value="the-500-app" spellcheck="false">
+      </div>
+      <div>
+        <label for="repo">Repo</label>
+        <input id="repo" value="assets" spellcheck="false">
+      </div>
+      <div>
+        <label for="tag">Version tag</label>
+        <input id="tag" value="v1.0.0" spellcheck="false">
+      </div>
+    </div>
+
+    <div style="margin:12px 0; display:flex; gap:8px;">
+      <button class="btn" id="copy">Copy all</button>
+      <span id="copied" class="muted" style="display:none;">Copied ✓</span>
+    </div>
+
+    <pre class="code" id="cdn"></pre>
+
+    <div class="footer">
+      Tip: Keep files named exactly as above. When you update assets, create a new tag (e.g. <code>v1.0.1</code>) and update the tag here to get fresh links.
+    </div>
+  </div>
+
+  <script>
+    const user = document.getElementById('user');
+    const repo = document.getElementById('repo');
+    const tag  = document.getElementById('tag');
+    const cdn  = document.getElementById('cdn');
+    const copyBtn = document.getElementById('copy');
+    const copied  = document.getElementById('copied');
+
+    function render(){
+      const u = user.value.trim();
+      const r = repo.value.trim();
+      const t = tag.value.trim();
+      const base = `https://cdn.jsdelivr.net/gh/${u}/${r}@${t}`;
+      cdn.textContent =
+`logo_light_svg: ${base}/brand/brandmark.svg
+logo_dark_svg:  ${base}/brand/brandmark-inverse.svg
+app_icon_1024:  ${base}/brand/app-icon-1024.png
+maskable_1024:  ${base}/brand/maskable-icon-1024.png
+favicon_svg:    ${base}/brand/favicon/favicon.svg
+favicon_ico:    ${base}/brand/favicon/favicon.ico
+apple_touch:    ${base}/brand/favicon/apple-touch-icon.png`;
+    }
+    [user, repo, tag].forEach(i => i.addEventListener('input', render));
+    render();
+
+    copyBtn.addEventListener('click', async () => {
+      try{
+        await navigator.clipboard.writeText(cdn.textContent);
+        copied.style.display = 'inline';
+        setTimeout(()=> copied.style.display='none', 1500);
+      }catch(e){
+        alert('Copy failed. Select and copy manually.');
+      }
+    });
+  </script>
+</body>
+</html>
