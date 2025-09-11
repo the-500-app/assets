@@ -1,0 +1,193 @@
+{
+  "$schema": "https://schemas.tokens.studio/developers/tokens.schema.json",
+  "$metadata": {
+    "tokenSetOrder": [
+      "global"
+    ]
+  },
+  "global": {
+    "color": {
+      "brand": {
+        "primary": {
+          "value": "#FFFFFF",
+          "type": "color"
+        },
+        "onPrimary": {
+          "value": "#333333",
+          "type": "color"
+        }
+      },
+      "neutral": {
+        "100": {
+          "value": "#FFFFFF",
+          "type": "color"
+        },
+        "300": {
+          "value": "#CCCCCC",
+          "type": "color"
+        },
+        "500": {
+          "value": "#999999",
+          "type": "color"
+        },
+        "900": {
+          "value": "#333333",
+          "type": "color"
+        }
+      },
+      "text": {
+        "primary": {
+          "value": "#333333",
+          "type": "color"
+        },
+        "muted": {
+          "value": "#767676",
+          "type": "color"
+        }
+      },
+      "action": {
+        "accept": {
+          "value": "#00FF00",
+          "type": "color"
+        },
+        "decline": {
+          "value": "#FF0000",
+          "type": "color"
+        },
+        "acceptFill": {
+          "value": "#008800",
+          "type": "color"
+        },
+        "declineFill": {
+          "value": "#E00000",
+          "type": "color"
+        }
+      }
+    },
+    "radius": {
+      "lg": {
+        "value": "16px",
+        "type": "borderRadius"
+      },
+      "md": {
+        "value": "12px",
+        "type": "borderRadius"
+      },
+      "sm": {
+        "value": "8px",
+        "type": "borderRadius"
+      }
+    },
+    "spacing": {
+      "1": {
+        "value": "4px",
+        "type": "spacing"
+      },
+      "2": {
+        "value": "8px",
+        "type": "spacing"
+      },
+      "3": {
+        "value": "12px",
+        "type": "spacing"
+      },
+      "4": {
+        "value": "16px",
+        "type": "spacing"
+      },
+      "5": {
+        "value": "24px",
+        "type": "spacing"
+      },
+      "6": {
+        "value": "32px",
+        "type": "spacing"
+      }
+    },
+    "font": {
+      "sans": {
+        "value": "Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif",
+        "type": "fontFamily"
+      }
+    },
+    "typography": {
+      "display": {
+        "value": {
+          "fontFamily": "{font.sans}",
+          "fontSize": "32px",
+          "lineHeight": "40px",
+          "fontWeight": "700"
+        },
+        "type": "typography"
+      },
+      "h1": {
+        "value": {
+          "fontFamily": "{font.sans}",
+          "fontSize": "28px",
+          "lineHeight": "36px",
+          "fontWeight": "700"
+        },
+        "type": "typography"
+      },
+      "h2": {
+        "value": {
+          "fontFamily": "{font.sans}",
+          "fontSize": "24px",
+          "lineHeight": "32px",
+          "fontWeight": "700"
+        },
+        "type": "typography"
+      },
+      "title": {
+        "value": {
+          "fontFamily": "{font.sans}",
+          "fontSize": "20px",
+          "lineHeight": "28px",
+          "fontWeight": "600"
+        },
+        "type": "typography"
+      },
+      "body": {
+        "value": {
+          "fontFamily": "{font.sans}",
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontWeight": "400"
+        },
+        "type": "typography"
+      },
+      "label": {
+        "value": {
+          "fontFamily": "{font.sans}",
+          "fontSize": "14px",
+          "lineHeight": "20px",
+          "fontWeight": "600"
+        },
+        "type": "typography"
+      },
+      "meta": {
+        "value": {
+          "fontFamily": "{font.sans}",
+          "fontSize": "12px",
+          "lineHeight": "16px",
+          "fontWeight": "600"
+        },
+        "type": "typography"
+      }
+    }
+  },
+  "$themes": [
+    {
+      "id": "light",
+      "name": "Light",
+      "selectedTokenSets": {
+        "global": "enabled"
+      },
+      "$metadata": {
+        "expand": [
+          "typography"
+        ]
+      }
+    }
+  ]
+}
